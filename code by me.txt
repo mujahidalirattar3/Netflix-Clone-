@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black ;
+}
+
+.main {
+  background-image: url("assests/images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 70vh;
+  position: relative;
+}
+
+.main .box {
+  height: 70vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  max-width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+nav img {
+  color: red;
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+  font-size: 35px;
+}
+
+.hero :first-child(#1){
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+.hero :nth-child(#2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation{
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-red-sn{
+    background-color: red;
+    color: white;
+}
+
+.btn-btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.main input{
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <span><img width="60" src="assests/images/logo.svg" alt="" /></span>
+        <div>
+          <button class="btn">English</button>
+          <button class="btn-red-sn">Sign In</button>
+        </div>
+      </nav>
+      <div class="box"></div>
+      <div class="hero">
+        <span id="1">Unlimited movies, TV shows, and more</span>
+        <span id="2">Starts at Rs 250. Cancel anytime.</span>
+        <span id="3">Ready to watch? Enter your email to create or restart your membership.</span>
+        <div>
+          <input type="text" placeholder="Email Address" />
+          <button class="btn-btn-red">Get Started</button>
+        </div>
+      </div>
+
+      <div class="seperation"></div>
+    </div>
+  </body>
+</html>
